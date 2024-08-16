@@ -1,0 +1,95 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h5>Description de risque</h5>
+  
+  <div class="container">
+    <h3>Adresse de L'Habitat</h3>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="gouvernorat">Gouvernorat<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(0, 1)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="region">Région<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(1, 2)"></formly-form>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="cite">Cité<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(2, 3)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="code_postal">Code Postale<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(3, 4)"></formly-form>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="adresse">Adresse<strong><span id="red">*</span></strong></label>
+      <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(4, 5)"></formly-form>
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>Informations sur le Local</h3>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="localitaire">Vous étes locataire ou propriétaire ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(5, 6)">
+        </formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="batiment">Quelle est la valeur du batiment ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(6, 7)"></formly-form>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="mobilier">Quelle est la valeur de mobilier ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(7, 8)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="habitation">Quelest le type de votre habitation ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(8, 9)"></formly-form>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="piece">Quel est le nombre de piéce de votre habitation ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(9, 10)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="superficie">Quelle est la superficie totale de votre habitation ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(10, 11)"></formly-form>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="construite">Quelle est la date a l'aquelle votre habitation a été construite ?<strong><span id="red">*</span></strong></label>
+      <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(11, 12)"></formly-form>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="dependance"> Quel est le type de votre dépendance ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(12, 13)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="nombre_dependance">Nombre de dépendance ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(13, 14)"></formly-form>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="occupant">Vous êtes occupant ou non occupant ?<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(14, 15)"></formly-form>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="logement">Nombre de personne occupant le logement<strong><span id="red">*</span></strong></label>
+        <formly-form [form]="form" [model]="modelWok" [fields]="fields.slice(15, 16)"></formly-form>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary">Submit</button> 
+  </div>
+</form>
+
